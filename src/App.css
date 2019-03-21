@@ -1,33 +1,126 @@
-.App {
-  text-align: center;
+.headerContainer{
+  background-color: lightgray;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+}
+.leftContainer{
+  border: solid 1px gray;
+  min-height: 85vh;
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+}
+.centerContainer{
+  /* border: solid 1px gray; */
+  min-height: 85vh;
+  flex: 2;
+  /* padding: 0px 10px; */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.mainBody{
+  display: flex;
+  padding: 10px;
+}
+
+.profileContainer1{
+  display: flex;
+}
+
+.profileContainer2{
+  display: flex;
+  margin-top: 30px;
+}
+
+.nameContainer{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+  width: 80px;
+  height: 80px;
+}
+.avatar-small{
+  width: 40px;
+  height: 40px;
+}
+.halfWidth{
+  display: flex;
+  flex: 1;
+}
+.divider{
+  border-bottom: solid 3px gray;
+  margin: 30px 0px;
+}
+
+.upperLevel{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subLevel{
+  padding-left: 10px;
+}
+
+.subLevel-active{
+  font-weight: 600;
+}
+
+.titleContainer{
+    border: solid 1px black;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.searchBarContainer{
+  background-color: gray;
+  border: solid 1px black;
+  padding: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.searchInput{
+  width: 80%;
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchButton{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.listRecipientContainer{
+  border: solid 1px black;
+  padding: 10px;
+  margin-top: 10px;
+  min-height: 68vh;
+  max-height: 68vh;
+  overflow: scroll;
+}
+
+.profileLogoContainerSmall{
+  display: flex;
+  flex: 1;
+}
+
+.nameContainerSmall{
+  display: flex;
+  flex: 2;
+  align-items: center;
+}
+
+.itemRecipient{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
 }
